@@ -1,66 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AI Learning Platform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <title>EduSmart Portal</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="center">
 
-<h1 id="title">🎓 AI Adaptive Learning Platform</h1>
-
-<button onclick="toggleLang()">🌐 Telugu</button>
-
-<div id="auth">
-  <input id="username" placeholder="Username">
-  <select id="role">
-    <option value="student">Student</option>
-    <option value="teacher">Teacher</option>
-  </select>
-  <button onclick="login()">Login</button>
+<div class="glass card">
+  <h2>EduSmart Portal</h2>
+  <button onclick="location.href='student-login.html'">Student Login</button>
+  <button onclick="location.href='teacher-login.html'">Teacher Login</button>
 </div>
 
-<div id="studentPanel" class="hidden">
-
-  <h2>📚 Class Selection</h2>
-  <select id="classSelect" onchange="loadStreams()"></select>
-  <div id="streamDiv" class="hidden">
-    <select id="streamSelect" onchange="loadSubjects()"></select>
-  </div>
-  <select id="subjectSelect"></select>
-
-  <h2>📝 Quiz</h2>
-  <p>20 ÷ 4 = ?</p>
-  <button onclick="submitQuiz(5)">5</button>
-  <button onclick="submitQuiz(6)">6</button>
-  <button onclick="submitQuiz(4)">4</button>
-  <p id="quizResult"></p>
-
-  <h2>🎮 Mini Game</h2>
-  <input type="number" id="guess">
-  <button onclick="playGame()">Guess 1–5</button>
-  <p id="gameResult"></p>
-
-  <h2>📘 Word Problem</h2>
-  <textarea id="wordProblem"></textarea>
-  <button onclick="simplify()">Simplify</button>
-  <p id="solution"></p>
-
-  <h2>📄 Download Report</h2>
-  <button onclick="downloadReport()">Download PDF</button>
-
-  <h2>📊 Performance</h2>
-  <canvas id="chart"></canvas>
-
-</div>
-
-<div id="teacherPanel" class="hidden">
-  <h2>👩‍🏫 Teacher Dashboard</h2>
-  <div id="studentData"></div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
