@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Adaptive Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎓 AI Adaptive Learning Platform</h1>
+        <p>Smart Learning for Classes 1–12</p>
+    </header>
+
+    <section class="card">
+        <h2>Select Class</h2>
+        <select id="classSelect">
+            <option value="">-- Choose Class --</option>
+            <script>
+                for(let i=1;i<=12;i++){
+                    document.write(`<option>Class ${i}</option>`);
+                }
+            </script>
+        </select>
+    </section>
+
+    <section class="card">
+        <h2>Quick Quiz</h2>
+
+        <p>5 + 3 = ?</p>
+        <button onclick="checkAnswer(8)">6</button>
+        <button onclick="checkAnswer(8)">8</button>
+        <button onclick="checkAnswer(8)">9</button>
+
+        <p id="result"></p>
+    </section>
+
+    <section class="card">
+        <h2>Word Problem Helper</h2>
+        <textarea id="problem" placeholder="Paste your word problem here..."></textarea>
+        <button onclick="simplify()">Simplify</button>
+        <p id="solution"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 AI Learning Platform</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
