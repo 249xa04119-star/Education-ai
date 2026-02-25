@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="sidebar glass">
+    <h3 id="studentDisplay"></h3>
+    <ul>
+      <li onclick="go('student-dashboard.html')">🏠 Dashboard</li>
+      <li onclick="go('quiz.html')">📝 Quiz</li>
+      <li onclick="go('problem.html')">🧠 Problem Solver</li>
+      <li onclick="go('game.html')">🎮 Game</li>
+      <li onclick="go('videos.html')">🎥 Videos</li>
+      <li onclick="go('report.html')">📄 Report</li>
+      <li onclick="logout()">🚪 Logout</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>Welcome Back 👋</h1>
+
+    <div class="cards">
+
+      <div class="glass box">
+        <h3>Overall Performance</h3>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="glass box">
+        <h3>Risk Status</h3>
+        <p id="riskStatus">Checking...</p>
+      </div>
+
+      <div class="glass box">
+        <h3>Strongest Subject</h3>
+        <p>Mathematics</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
